@@ -1,5 +1,6 @@
 import { MAX_POS } from '../constant';
 import { getRandomInteger } from './number';
+import { assert } from './assert';
 
 let currentId = 1;
 export const makeTile = (tileList) => {
