@@ -1,11 +1,13 @@
 import { MAX_POS } from '../constant';
 import { getRandomInteger } from './number';
 
+let currentId = 1;
 export const makeTile = (tileList) => {
   let tile;
 
   while (!tile || checkCollision(tileList, tile)) {
     tile = {
+      id: currentId++,
       x: getRandomInteger(1, MAX_POS),
       y: getRandomInteger(1, MAX_POS),
       value: 2,
