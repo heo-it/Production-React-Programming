@@ -8,7 +8,9 @@ export const makeTile = (tileList) => {
     tile = {
       x: getRandomInteger(1, MAX_POS),
       y: getRandomInteger(1, MAX_POS),
-      value: 2
+      value: 2,
+      isNew: undefined,
+      isMerged: undefined
     };
   }
 
