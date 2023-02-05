@@ -10,8 +10,8 @@ const Game = () => {
     <div className="game-container">
       <div className="grid-container">
         {
-          _.times(MAX_POS, () => (
-            <div className="grid-row">
+          _.times(MAX_POS, (index) => (
+            <div key={index} className="grid-row">
               { _.times(MAX_POS, () => (
                 <div className="grid-cell"></div>
               ))}
