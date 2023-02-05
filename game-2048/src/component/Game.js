@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import _ from 'lodash';
 import { MAX_POS } from '../constant';
+import { getInitialTileList } from '../util/tile';
 
 const Game = () => {
-  const [tileList] = useState([]);
+  const [tileList] = useState(getInitialTileList());
 
   return (
     <div className="game-container">
